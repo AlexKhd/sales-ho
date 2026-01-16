@@ -1,0 +1,48 @@
+.w-full.max-w-7xl.mx-auto.px-4.sm:px-6.lg:px-8.py-6
+  .flex.justify-between.items-center.mb-6
+    h1.text-2xl.font-bold.text-gray-900 = t('users.users')
+
+    .flex.space-x-2
+      = link_to "Show All", users_path, class: "inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+      = link_to "Add New User", new_user_path, class: "inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+
+  - if @roles.any?
+    .mb-6.border-b.border-gray-200
+      nav.-mb-px.flex.space-x-8 aria-label="Tabs"
+        - @roles.each do |role|
+          - is_active = role.name == params[:role]
+          = link_to role.name.capitalize, users_path(role: role.name), class: "#{is_active ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'} whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
+
+  .bg-white.shadow-sm.ring-1.ring-gray-900/5.sm:rounded-xl
+    table.min-w-full.divide-y.divide-gray-300
+      thead.bg-gray-50
+        tr
+          th.py-3.5.pl-4.pr-3.text-left.text-sm.font-semibold.text-gray-900.sm:pl-6 Name
+          th.px-3.py-3.5.text-left.text-sm.font-semibold.text-gray-900 Email
+          th.px-3.py-3.5.text-left.text-sm.font-semibold.text-gray-900 Roles
+          th.px-3.py-3.5.text-center.text-sm.font-semibold.text-gray-900 Blocked
+          th.relative.py-3.5.pl-3.pr-4.sm:pr-6
+            span.sr-only Actions
+
+      tbody.divide-y.divide-gray-200.bg-white
+        - @users.each do |user|
+          tr
+            td.whitespace-nowrap.py-4.pl-4.pr-3.text-sm.font-medium.text-gray-900.sm:pl-6 class="#{user.blocked? ? 'text-gray-400' : ''}"
+              = user.name
+              - if user.nickname.present?
+                span.ml-2.text-xs.text-gray-500 = "(#{user.nickname})"
+            td.whitespace-nowrap.px-3.py-4.text-sm.text-gray-500 = user.email
+            td.whitespace-nowrap.px-3.py-4.text-sm.text-gray-500
+              - user.roles.each do |role|
+                span.inline-flex.items-center.rounded-md.bg-gray-50.px-2.py-1.text-xs.font-medium.text-gray-600.ring-1.ring-inset.ring-gray-500/10.mr-1 = role.name
+            td.whitespace-nowrap.px-3.py-4.text-sm.text-gray-500.text-center
+              - if user.blocked?
+                span.inline-flex.items-center.rounded-md.bg-red-50.px-2.py-1.text-xs.font-medium.text-red-700.ring-1.ring-inset.ring-red-600/10 Yes
+              - else
+                span.inline-flex.items-center.rounded-md.bg-green-50.px-2.py-1.text-xs.font-medium.text-green-700.ring-1.ring-inset.ring-green-600/20 No
+            td.relative.whitespace-nowrap.py-4.pl-3.pr-4.text-right.text-sm.font-medium.sm:pr-6
+              .flex.justify-end.gap-2
+                - if policy(user).edit?
+                  = link_to "Edit", edit_user_path(id: user), class: "text-indigo-600 hover:text-indigo-900"
+                - if policy(user).destroy?
+                  = button_to "Delete", user_path(id: user), method: :delete, data: { turbo_confirm: "Are you sure?" }, class: "text-red-600 hover:text-red-900 bg-transparent border-0 cursor-pointer p-0"

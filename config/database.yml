@@ -22,6 +22,9 @@ default: &default
 
 development:
   <<: *default
+  username: <%= Rails.application.credentials.dev_pg_user %>
+  password: <%= Rails.application.credentials.dev_pg_password %>
+  host: 127.0.0.1
   database: sales_ho_development
 
   # The specified database role being used to connect to PostgreSQL.
@@ -57,6 +60,9 @@ development:
 test:
   <<: *default
   database: sales_ho_test
+  host: 127.0.0.1
+  username: <%= Rails.application.credentials.dev_pg_user %>
+  password: <%= Rails.application.credentials.dev_pg_password %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is

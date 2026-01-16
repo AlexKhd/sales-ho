@@ -49,3 +49,5 @@
 # Ignore Docker-related files
 /.dockerignore
 /Dockerfile*
+/.sendho
+/spec/support/screenshots/*

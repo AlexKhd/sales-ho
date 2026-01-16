@@ -1,0 +1,32 @@
+.w-full.max-w-7xl.mx-auto.px-4.sm:px-6.lg:px-8.py-6
+  .flex.justify-between.items-center.mb-6
+    h1.text-2xl.font-bold.text-gray-900 = t('forms.edit')
+
+    .flex.space-x-2
+      /= link_to "Show All", users_path, class: "inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+      /= link_to "Add New Server", new_user_path, class: "inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+
+  .bg-white.shadow-sm.ring-1.ring-gray-900/5.sm:rounded-xl
+    table#faces.min-w-full.divide-y.divide-gray-300
+      thead.bg-gray-50
+        tr
+          th.py-3.5.pl-4.pr-3.text-left.text-sm.font-semibold.text-gray-900.sm:pl-6 ID
+          th.px-3.py-3.5.text-left.text-sm.font-semibold.text-gray-900 Title
+          th.px-3.py-3.5.text-left.text-sm.font-semibold.text-gray-900 Shorttitle
+          th.px-3.py-3.5.text-left.text-sm.font-semibold.text-gray-900 Role
+          th.px-3.py-3.5.text-center.text-sm.font-semibold.text-gray-900 Ownership
+          th.relative.py-3.5.pl-3.pr-4.sm:pr-6
+            span.sr-only Actions
+
+      tbody.divide-y.divide-gray-200.bg-white
+        - @faces.each do |face|
+          tr id="face-#{face.fid}"
+            td.fid.whitespace-nowrap.py-4.pl-4.pr-3.text-sm.font-medium.text-gray-900.sm:pl-6 = face.fid
+            td.whitespace-nowrap.px-3.py-4.text-sm.text-gray-500 = face.title
+            td.whitespace-nowrap.px-3.py-4.text-sm.text-gray-500 = face.shorttitle
+            td.whitespace-nowrap.px-3.py-4.text-sm.text-gray-500 = face.ftype
+            td.text-center.whitespace-nowrap.px-3.py-4.text-sm.text-gray-500 = "#{face.dist_id}/#{face.ownerdist_id}"
+            td.relative.whitespace-nowrap.py-4.pl-3.pr-4.text-right.text-sm.font-medium.sm:pr-6
+              .flex.justify-end.gap-2
+                - if policy(face).edit?
+                  = link_to t('buttons.edit'), edit_face_path(id: face), class: "text-indigo-600 hover:text-indigo-900"

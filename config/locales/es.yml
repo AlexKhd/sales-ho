@@ -1,0 +1,808 @@
+es:
+  welcome: 'Bienvenido'
+  log_in: Inicio
+  name_or_email: e-mail
+  password: Contraseña
+  remember_me: Recuérdame
+  sign_in_page: Página de registro
+  #sign_in: registrarse
+  sign_in: Iniciar Sesión
+  activerecord:
+    attributes:
+      tag:
+        name: Título
+    errors:
+      messages:
+        email_invalid: Tienes que introducir un correo electrónico válido.
+        record_invalid: 'La validación falló: %{errors}'
+        not_saved:
+          one: "Ha ocurrido 1 error:"
+          other: "Han ocurrido %{count} errores:"
+        restrict_dependent_destroy:
+          has_one: No se puede eliminar el registro porque existe un %{record} dependiente
+          has_many: No se puede eliminar el registro porque existen %{record} dependientes
+  buttons:
+    add: Añadir
+    add_component: Añadir componente
+    add_item: Añadir producto
+    add_payment_point: Añadir punto de pago
+    add_semiitem: Añadir semiproducto
+    add_new_tag: Crear una nueva etiqueta
+    add_new_user: Añadir nuevo usuario
+    additionals: Agregados
+    back: Atrás
+    backoffice: Backoffice
+    bulletins: Notas
+    cardtocard_transfer: Transferencia entre tarjetas
+    cash_withdrawal: Retiro de efectivo
+    cashier_work: Trabajo de cajero
+    check_fill: Verificar y llenar
+    close_day_backoffice: Cerrar día corriente
+    components: Componentes
+    config: Configuración
+    confirm: Confirmar
+    confirm_delivery: Confirmar el envío
+    create_based_order: Crear según el modelo
+    create_edit: Crear&Editar
+    current_day: Este día
+    current_last_day: Actual / último día
+    current_month: Mes actual
+    current_week: Esta semana
+    current_year: Este año
+    daily_report: Informe diario
+    daily_reports: Informes diarios
+    day_status: Estado del día
+    delete_tag: Eliminar etiqueta
+    delete: Eliminar
+    deleted: Eliminados
+    deposit_to_account: Deposito en cuenta
+    detailed: Detallado
+    details: Detalles
+    dictionaries: Diccionarios
+    discount_manage: Gestión de descuento
+    documents: Documentos
+    duplicate: Duplicar
+    close: Cerrar
+    closed: Cerrado
+    create: Crear
+    contacts: Contactos
+    discounts: Reglas de precios
+    download_xls: Descarga xls
+    edit: Editar
+    edit_by_component: Editar por componente
+    edit_in_table: Editar en tabla
+    edit_tags: Editar etiquetas
+    gifts: Regalos
+    home: Inicio
+    import: Importar
+    inactives: Inactivos
+    information: Información
+    integrity: Integridad
+    inventories: Inventarios
+    inventory: Inventario
+    items: Productos
+    kits: Equipos
+    log_in: Iniciar Sesión
+    log_in2: Ingresar
+    log_out: Cerrar Sesión
+    main: Principal
+    manage_by_items: Gestionar por productos
+    moving_month: Movimientos mes
+    moving_week: Movimientos semana
+    options: Opciones
+    ordered_by_position: Ordenado por posición
+    ortypes: Tipos de documentos
+    payments: Pagos
+    period: Período
+    promos: Ofertas
+    ptypes: Formas de pago
+    purchases: Compras
+    refresh: Actualizar datos
+    reject: Rechazar
+    reload_page: Recargar la página
+    renew: Renovar
+    reports: Informes
+    report_margin: Informe de márgenes
+    report_saldo: Saldo
+    run_all_checks: Ejecutar todas
+    sales: Ventas
+    save: Guardar
+    semiitems: Semiproductos
+    send_message: Enviar mensaje
+    set: Ajustar
+    show: Mostrar
+    show_all: Mostrar todo
+    show_all_f: Mostrar todas
+    show_all_m: Mostrar todos
+    show_all_items: Mostrar todos productos
+    show_for_online_sale: Para ventas en línea
+    show_status: Mostrar estado
+    show_unconfirmed_orders: Mostrar documentos no confirmados
+    sign_in: Iniciar Sesión
+    start_work: Comienzo del trabajo
+    stock: Stock
+    stock_by_date: Stock por fecha
+    stock_by_shift: Stock de productos por turno
+    tags_management: Gestión de etiquetas
+    tasks: Tareas
+    units: Unidades
+    unprocessed: sin procesar
+    update: Actualizar
+    user_manual: Manual del usuario
+    valid_only: Sólo válidos
+  dropdowns:
+    choose_component: Elegir componente
+    choose_face: Elegir contacto
+    choose_street: Elegir calle
+    choose_ingredient: Elegir ingrediente
+    choose_item: Elegir producto
+    choose_kit: Elegir equipo
+    choose_ptype: Elegir forma de pago
+    choose_unit: Elegir unidad
+  forms:
+    active: Activo
+    address:
+      city: Ciudad
+      street: Calle
+      street2: Edificio
+      address: Dirección
+    are_you_sure: ¿Está seguro?
+    add_component: Agregar componente
+    add_ean: Añadir EAN
+    add_ingredient: Agregar ingrediente
+    add_your_address: Agrega tu dirección
+    addit_description: Descripción adicional
+    additional: adicional
+    opening_cash: Apertura de efectivo
+    assign: Asignar
+    assigned: Asignado
+    available_to_add: Disponible para agregar
+    bank_fee: Comisión bancaria
+    brand_new: Nuevo
+    bulletins: Notas
+    by_ean: Por EAN
+    by_shift: Por turno
+    by_title: Por título
+    business: Local
+    calculated_price: Precio calculado
+    cards_info: Información de las tarjetas
+    cash_last_close_spp: Saldo del cierre anterior
+    cash_summary: Resumen de caja
+    choose_component_to_add: Elige componente a añadir
+    choose_ingredient_to_add: Elige ingrediente a añadir
+    choose_item_to_add: Elige producto a añadir
+    choose_kit_to_add: Elige equipo a añadir
+    choose_rule: Elige regla
+    choose_semiitem_to_add: Elige semiproducto a añadir
+    closing_cash: Caja de cierre
+    closed_at: Cerrado a las
+    closed_by: Cerrado por
+    closed_timetable: Horario - cerrado
+    closing_the_day: Cerrando el día
+    comment: Comentario
+    component: Componente
+    components: Componentes
+    components_for: Componentes para
+    created: Creado
+    created_by: creado por
+    critical: Crítico
+    critical_errors: Errores críticos
+    current_day: Día actual
+    current_month: Mes actual
+    data_import: Importación de datos
+    data_integrity: Integridad de los datos
+    database: Base de datos
+    date: Fecha
+    date_end: Fecha de caducidad
+    date_start: Fecha de inicio
+    day_activity_report: Informe de actividad diaria
+    day_management: Gestión diaria
+    day_is_opened: El día está abierto
+    day_is_closed: El día está cerrado
+    day_payment: Pago diario
+    day_was_closed: El día estaba cerrado
+    delivery_address: Dirección de entrega
+    description: Descripción
+    description_for_shop: Descripción para tienda
+    discounts: Reglas de precios
+    document_processed: Documento procesado
+    document_no_processed: El documento no ha sido procesado
+    documents_related: Documentos relacionados
+    edit: Editar
+    edit_tags: Editar etiquetas
+    edit_bulletin: Editar nota
+    edit_item: Editar producto
+    editing_ingredient_in: Editar ingrediente en
+    editing_semiitem_in: Editar semiproducto en
+    enter_direction: Ingresa una dirección para entregar tu pedido
+    exid: ExID
+    field_service: Servicio de campo
+    finance_activity: Actividades financieras
+    for_information: para información
+    for_main_page: para la página principal
+    for_sales_online: A la venta en línea
+    for_shop: Tienda online
+    full_list_of_tags: Lista completa de etiquetas
+    have_unconfirmed_orders: Hay documentos no confirmados
+    history: Historia
+    id: ID
+    in: en
+    image: Imagen
+    images: Imágenes
+    inactives: Inactivos
+    income: Ingreso
+    ingredients_not_assigned: Componentes no están asignados
+    integrity_status: Estado de integridad
+    is_default: Predeterminado
+    item: Producto
+    item_details: Composición del producto
+    items: Productos
+    items_not_assigned: Productos no están asignados
+    kit: Equipo
+    kit_details: Detalles de equipo
+    kit_rule: Regla del kit
+    kits: Equipos
+    kits_shop: Combos
+    last_day: El día anterior
+    last_month: Mes anterior
+    last_run: Última ejecución
+    location: Ubicación
+    low: Bajo
+    low_level_errors: Errores de bajo nivel
+    main_shift: Turno principal
+    main_shift_is_closed: El turno principal está cerrado
+    main_shift_is_opened: El turno principal está abierto
+    management: Gestión
+    margin: Margen
+    medium: Medio
+    medium_level_errors: Errores de nivel medio
+    merchandising: Merchandising
+    merch_add_attr: Añadir nuevo atributo
+    merch_collect_attrs: Atributos de recopilación de datos
+    merch_doctypes: Tipos de documentos de merchandising
+    merch_management: Gestión de merchandising
+    merchandising_reports: Informes de merchandising
+    mobiles_app: Mobiles
+    my_account: Mi Cuenta
+    new_m: Nuevo
+    new_bulletin: Nueva nota
+    new_payment_point: Nuevo punto de pago
+    new_photo: Nueva imagen
+    new_store: Nuevo almacen
+    new_value: Monto nuevo
+    new_tag: Nueva etiqueta
+    no_barcode: Sin EAN
+    no_components: no hay componentes
+    no_errors: Sin errores
+    no_items: no hay productos
+    no_items_in_category: No hay productos en esta categoría
+    no_packing_tag: No hay etiqueta de embalaje
+    no_payments_for_shift: No hay pagos por este turno
+    no_payment_points: No hay puntos de pago
+    no_photo: Sin foto
+    no_previous_orders: No hay pedidos previos
+    no_rules: No hay reglas
+    not_active: No activo
+    not_assigned: No asignado
+    not_filled_f: No completa
+    not_logged_in: No has iniciado sesión
+    notifications: Notificaciones
+    number: número
+    only_one_rule: Sólo una regla
+    oos_components: Componentes fuera de stock
+    opened: Abierto
+    opened_at: Abierto a las
+    opened_by: Abierto por
+    opening_the_payment_point: Abriendo el punto de pago
+    orders: Documentos
+    out_of_address: Sin dirección
+    ownership: Propiedad
+    packings: Embalaje
+    payment_points: Puntos de pago
+    percentage: Porcentaje
+    phone: Fono
+    photo: Foto
+    photos: Fotos
+    points: Locales
+    position: Posición
+    preorder: Pre-Venta
+    preorders: Pre-Ventas
+    previous_days: Días anteriores
+    previous_orders: Pedidos anteriores
+    price: Precio
+    product_details: Detalles de producto
+    quantity: Cantidad
+    quantity_of: Cantidad de
+    quantity_of_payment_points_opened: Número de puntos de pago abiertos
+    report_filters: Filtros de informe
+    result: Resultado
+    rules: Reglas
+    sale: Venta
+    sheduled_tasks: Tareas programadas
+    shift_main: Turno principal
+    shift_payment_point: Turno del punto de pago
+    semiitem: Semiproducto
+    shop_link: Enlace a la tienda
+    shop_url_link: URL de la sección de tienda
+    shorttitle: Título corto
+    scan_ean: Escanear EAN
+    semiitem_details: Composición del semiproducto
+    shift: Turno
+    slogan: Slogan
+    sort: Orden
+    start_stock_report_notify: Iniciar informe de stock notificar
+    status: Estado
+    stock: Resto
+    stock_by_shift: Existencias de componentes según turno
+    stock_initial: Existencias al inicio
+    stockmin: Resto mínimo
+    store: Almacen
+    stores: Almacenes
+    street_and_building: Calle y edificio
+    success: Éxito
+    sum: Total
+    tag: Etiqueta
+    tags: Etiquetas
+    tags_assigned: Etiquetas asignadas
+    tags_management: Administrar etiquetas
+    title: Título
+    type: Tipo
+    updated: Actualizado
+    usage: Uso
+    usually_buy_together: Comprados juntos habitualmente
+    value: Valor
+    value_m: Monto
+    visits: Visitas
+    was_added: Fueron agregados
+    was_not_opened: No fue abierto
+    weekdays: Días de la semana
+    will_inactive: Estará inactivo
+    write_off_components: Cancelación de componentes
+  message:
+    added_succ: Se agregó con éxito
+    admin_allowed_action_only: Acción permitida solo al administrador
+    component_added_succ: El componente se agregó con éxito
+    data_saved_successfully: Datos guardados exitosamente
+    discount_successfully_created: El descuento fue creado con éxito
+    discount_successfully_updated: El descuento fue actualizado con éxito
+    forbidden: Prohibido
+    goes_inventory: El inventario está en progreso
+    has_uncompleted_inventory: Hay inventario incompleto
+    has_uncompleted_payments: Hay pagos incompletos
+    has_uncompleted_purchases: Hay compras incompletas
+    has_uncompleted_sales: Hay ventas incompletas
+    included_in_items: Incluido en productos
+    ingredient_added_succ: El ingrediente se agregó con éxito
+    ingredient_removed_succ: El ingrediente fue eliminado con éxito
+    instead_of: en lugar de
+    integrity_results_successfully_deleted: Los resultados de la verificación se eliminaron con éxito
+    inventory_not_created: Inventario no creado
+    main_shift_closed_succesfully: El cambio principal se ha cerrado con éxito
+    main_shift_is_opened_succesfully: El cambio principal se ha abierto con éxito
+    main_shift_cannot_be_closed: El turno principal no se puede cerrar
+    must_be_one_role: Debe haber al menos un rol
+    name_already_exists: El titulo ya ha sido tomado
+    no_tag_entered: La etiqueta no fue ingresada
+    not_authorized_to_this_action: No estás autorizado para realizar esta acción
+    not_found: No encontrado
+    not_included_in_items: No incluido en productos
+    ordered_by_price: Ordenado por - Precio - menor a mayor
+    ordered_by_price_desc: Ordenado por - Precio - mayor a menor
+    ordered_by_title: Ordenado por - Título
+    pack_was_chosen: El embalaje fue elegido
+    product_added_succ: El producto se ha añadido correctamente
+    product_removed_succ: El producto fue eliminado con éxito
+    ptype_cash_has_been_taken: Tipo de pago Efectivo ya creado
+    removed_succ: Eliminado con éxito
+    tag_exists: Esta etiqueta ya existe
+    tag_assigned: La etiqueta ya asignada
+    there_is_document_with_the_ptype: Hay un documento con este tipo de pago
+    there_is_other_docs: Hay un documento(s) en el turno
+    was_changed_to: Se cambió a
+    was_chosen: Fue elegido
+    was_chosen_item: Se seleccionó el producto
+    was_successfully_added: Fue añadido con éxito
+    was_successfully_confirmed: Fue confirmado exitosamente
+    was_successfully_created: Fue creado con éxito
+    was_successfully_deleted: Fue eliminado con éxito
+    was_successfully_imported: Se importó con éxito!
+    was_successfully_sent: Fue enviado con éxito
+    was_successfully_unconfirmed: Fue desconfirmada con éxito
+    was_not_created: No fue creado
+    was_not_deleted: No fue eliminado
+    was_not_successfully_imported: No se importó con éxito
+    was_not_updated: No fue actualizado!
+    was_successfully_updated: Fue actualizado con éxito
+    you_have: Tú tienes
+  tables:
+    action: Acción
+    active: Activo
+    address: Dirección
+    assigned_to: Asignado a
+    blocked: Bloqueado
+    building: Edificio
+    card: Tarjeta
+    cash: Efectivo
+    cash_withdrawal: Retiro de efectivo
+    comment: Comentario
+    created_by: Creado por
+    closed: Cerrado
+    current_stock: Resto actual
+    data: Datos
+    date: Fecha
+    delivery_cost: Costo de entrega
+    department: Departamento
+    department_short: Dept
+    description: Descripción
+    description_delivery: Notas sobre tu pedido, por ejemplo, notas especiales para la entrega.
+    details: Detalles
+    discount: Descuento
+    discount_has_been_assigned: Se ha asignado el descuento
+    discount_has_not_been_assigned: El descuento no ha sido asignado
+    email: e-mail
+    face: Contacto
+    for_quantity: por cantidad
+    from: Desde
+    hour: Hora
+    in_category: están en esta categoría
+    in_units: En unidades
+    is_unit: Es unidad
+    items: Productos
+    ingredient: Ingrediente
+    ingredient_additional: Puede haber un ingrediente adicional en un producto en tienda online
+    name: Nombre
+    new_comment: Nuevo comentario
+    no_data: sin datos
+    not_in_category: no están en esta categoría
+    outofstock: Agotado
+    order: Venta
+    photo: Foto
+    price: Precio
+    price_extra: Precio extra
+    priority: Prioridad
+    payment: Pago
+    purchase_price: Precio de compra
+    quantity: Cantidad
+    rate: Ratio
+    saldo_cash: Dinero en efectivo
+    saldo_card: Tarjeta
+    shorttitle: Título corto
+    street: Calle
+    stock: Resto
+    stockmin: Resto mínimo
+    sum_partial: Monto
+    sum: Total
+    title: Título
+    to: A
+    type: Tipo
+    unit_minimum: Unidad de medida mínima
+    units: Unidades
+    units_weight: Unidades(Peso)
+    weight: Peso
+    weight_extra: Peso extra
+    were_no_purchases: No hubo compras
+  categories:
+    categories: Categorías
+    create_new: Crear categoría nueva
+    edit_category: Editar categoría
+  deals:
+    form:
+      new_deposit: Nuevo deposito
+      new_transfer: Transferencia nueva
+      new_withdrawal: Retiro de efectivo
+  faces:
+    faces: Contactos
+    new_face: Contacto nuevo
+    edit_face: Editar contacto
+  guyas: Guías
+  items:
+    head: Productos
+    form:
+      new_item: Producto nuevo
+  ingredients:
+    head: Ingredientes
+    form:
+      new_ingredient: Ingrediente nuevo
+  integrities:
+    measurement_units: Comprobar unidades de medida
+    ingredients_units_relationship: Comprobar relación componentes - unidades
+    is_inner_price_exist: Сomprobar si los productos tienen precios internos
+    is_ingredient_price_exist: Compruebe que el precio del componente exista
+    product_prices_vs_inner: Сomprobar los precios de los productos en relación con los precios internos
+  inventories:
+    head: Inventario
+    new: Nuevo inventario
+  orders:
+    orders: Ventas
+    form:
+      new_order: Nueva Venta
+    plur:
+      none: No hay pedidos nuevos
+      one: Hay 1 pedido nuevo
+      other: Hay %{count} pedidos nuevos
+  ortypes:
+    ortype: Tipo de documento
+    ortypes: Tipos de documentos
+  payments:
+    head: Pagos
+  ptypes:
+    ptype: Forma de pago
+    ptypes: Formas de pago
+    new_ptype: Nueva forma de pago
+  sales:
+    sales: Ventas
+    form:
+      new_sale: Nueva Venta
+  plur:
+    none: No hay pedidos nuevos
+    one: Hay 1 pedido nuevo
+    other: Hay %{count} pedidos nuevos
+  purchases:
+    create_new: Crear compra nueva
+    head: Compras
+    new: Compra nueva
+    purchase: Compra
+  saldo:
+    saldo: Saldo
+    day_payments: Pagos diarios
+    current_saldo: Saldo actual
+    initial_current_day_saldo: Saldo de apertura del día actual
+    initial_saldo: Saldo inicial
+  task:
+    new_task: Nueva tarea
+    task: Tarea
+    tasks: Tareas
+    plur:
+      one: Tú tienes 1 tarea
+      other: Tú tienes %{count} tareas
+  semiitems:
+    head: Semiproductos
+    form:
+      new_semiitem: Semiproducto nuevo
+  stocks:
+    stocks: Valores
+  units:
+    head: Unidades
+  config:
+    config: Configuración
+  users:
+    user: Usuario
+    users: Usuarios
+  audit:
+    audit: Actividad
+    user_activity: Actividad del usuario
+  # end of navbar links
+  unprocessed: sin procesar
+  mailer:
+    details: Detalles
+    from: de
+    new_task_comment: Nuevo comentario!
+    new_order_header: Tienes un nuevo pedido
+    new_task_header: Tienes una nueva tarea
+    order_details: Detalles del pedido
+    without_description: sin descripción
+  date:
+    abbr_day_names:
+    - dom
+    - lun
+    - mar
+    - mié
+    - jue
+    - vie
+    - sáb
+    abbr_month_names:
+    -
+    - ene
+    - feb
+    - mar
+    - abr
+    - may
+    - jun
+    - jul
+    - ago
+    - sep
+    - oct
+    - nov
+    - dic
+    day_names:
+    - domingo
+    - lunes
+    - martes
+    - miércoles
+    - jueves
+    - viernes
+    - sábado
+    formats:
+      default: "%d/%m/%Y"
+      long: "%A %d de %B de %Y"
+      short: "%d de %b"
+    month_names:
+    -
+    - enero
+    - febrero
+    - marzo
+    - abril
+    - mayo
+    - junio
+    - julio
+    - agosto
+    - septiembre
+    - octubre
+    - noviembre
+    - diciembre
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: alrededor de 1 hora
+        other: alrededor de %{count} horas
+      about_x_months:
+        one: alrededor de 1 mes
+        other: alrededor de %{count} meses
+      about_x_years:
+        one: alrededor de 1 año
+        other: alrededor de %{count} años
+      almost_x_years:
+        one: casi 1 año
+        other: casi %{count} años
+      half_a_minute: medio minuto
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      less_than_x_minutes:
+        one: menos de 1 minuto
+        other: menos de %{count} minutos
+      over_x_years:
+        one: más de 1 año
+        other: más de %{count} años
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_days:
+        one: 1 día
+        other: "%{count} días"
+      x_months:
+        one: 1 mes
+        other: "%{count} meses"
+      x_years:
+        one: 1 año
+        other: "%{count} años"
+    prompts:
+      second: Segundo
+      minute: Minuto
+      hour: Hora
+      day: Día
+      month: Mes
+      year: Año
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: debe ser aceptado
+      blank: no puede estar en blanco
+      confirmation: no coincide
+      empty: no puede estar vacío
+      equal_to: debe ser igual a %{count}
+      even: debe ser par
+      exclusion: está reservado
+      greater_than: debe ser mayor que %{count}
+      greater_than_or_equal_to: debe ser mayor que o igual a %{count}
+      inclusion: no está incluido en la lista
+      invalid: no es válido
+      less_than: debe ser menor que %{count}
+      less_than_or_equal_to: debe ser menor que o igual a %{count}
+      model_invalid: 'La validación falló: %{errors}'
+      not_a_number: no es un número
+      not_an_integer: debe ser un entero
+      odd: debe ser impar
+      other_than: debe ser distinto de %{count}
+      present: debe estar en blanco
+      required: debe existir
+      taken: ya está en uso
+      too_long:
+        one: es demasiado largo (1 caracter máximo)
+        other: es demasiado largo (%{count} caracteres máximo)
+      too_short:
+        one: es demasiado corto (1 caracter mínimo)
+        other: es demasiado corto (%{count} caracteres mínimo)
+      wrong_length:
+        one: no tiene la longitud correcta (1 caracter exacto)
+        other: no tiene la longitud correcta (%{count} caracteres exactos)
+    template:
+      body: 'Se encontraron problemas con los siguientes campos:'
+      header:
+        one: No se pudo guardar este/a %{model} porque se encontró 1 error
+        other: No se pudo guardar este/a %{model} porque se encontraron %{count} errores
+  helpers:
+    select:
+      prompt: Por favor seleccione
+    submit:
+      create: Crear
+      submit: Guardar
+      update: Actualizar
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%u %n"
+        precision: 0
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: "."
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: mil millones
+          million:
+            one: millón
+            other: millones
+          quadrillion: mil billones
+          thousand: mil
+          trillion:
+            one: billón
+            other: billones
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          eb: EB
+          gb: GB
+          kb: KB
+          mb: MB
+          pb: PB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " y "
+      two_words_connector: " y "
+      words_connector: ", "
+  time:
+    am: am
+    formats:
+      default: "%A, %d de %B de %Y %H:%M:%S %z"
+      long: "%A %d de %B de %Y %H:%M"
+      short: "%d de %b %H:%M"
+    pm: pm
+  will_paginate:
+    next_label: Siguiente →
+    page_entries_info:
+      multi_page: Mostrando %{model} %{from} - %{to} de %{count} en total
+      multi_page_html: Mostrando %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> de <b>%{count}</b> en total
+      single_page:
+        one: Mostrando 1 %{model}
+        other: Mostrando en total %{count} %{model}
+        zero: No se encontraron %{model}
+      single_page_html:
+        one: Mostrando <b>1</b> %{model}
+        other: Mostrando en <b>total&nbsp;%{count}</b> %{model}
+        zero: No se encontraron %{model}
+    page_gap: "&hellip;"
+    previous_label: "← Atrás"
